@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lemon&family=Sarabun&display=swap');
+
+:root {
+    --dark: #1B1B1B;
+    --sidebar:  #282828;
+    --botao1: #484848;
+    --textos: #1F1338;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+    --gray: #6B7280;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: var(--dark);
+    color: #EEE;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    display: block ;
+    flex-direction: column;
+    width: 309px;
+    overflow-y: auto;
+    background-color: var(--sidebar);
+    gap: 2em;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 260px;
+    height: 50px;
+    padding: 1rem 0;
+
+    border-radius: 15px;
+    border: none;
+    background-color: var(--botao1);
+
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #EEE;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: var(--dark);
+    word-spacing: 0.1rem;
+}
+
+.note-preview {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 2em 3em;
+    flex-grow: 1;
+    gap: 2em;
+}
+
+.list-item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    width: 260px;
+    
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #EEE;
+    cursor: pointer;
+}
+
+.small-title {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5em 1em;
+}
+
+.small-body {
+    padding: 0 1em;  
+}
+
+.small-updated {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em 1em;
+    
+    opacity: 50%;
+    font-style: italic;
+    font-size: 0.8rem;
+    word-spacing: 0.1rem;
+}
+
+.item-selected {
+    background-color: var(--botao1);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.ttitle {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--botao1);
+}
+
+.bbody {
+    flex-grow: 1;
+    font-family: "Lato";
+    font-size: 1.25rem;
+    color: #EEE;
+    resize: none;
+}
