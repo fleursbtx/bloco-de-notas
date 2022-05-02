@@ -134,3 +134,22 @@ input, textarea {
     color: #EEE;
     resize: none;
 }
+
+.sidebar::-webkit-scrollbar{
+    width: 1rem;
+    background-color: none;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: var(--botao1);
+}
+
+.bbody::-webkit-scrollbar{
+    width: 1rem;
+    background-color: none;
+}
+
+.bbody::-webkit-scrollbar-thumb{
+    background-color: var(--sidebar);
+    border-radius: 10px;
+}
